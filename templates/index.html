@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acronym Generator</title>
+    <script src="/static/script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        #response {
+            margin-top: 20px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Acronym Generator</h1>
+    <label for="phrase">Enter a phrase:</label>
+    <input type="text" id="phrase" placeholder="Enter your phrase here">
+    <button id="generate">Generate Acronym</button>
+
+    <div id="response"></div>
+</body>
+</html>
