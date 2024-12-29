@@ -16,5 +16,9 @@ def generate_acronym():
     acronym = " ".join([word[0].upper() for word in text])
     return jsonify({"acronym": acronym})
 
-if __name__ == "__main__":
+# Ensure app runs only when used as the main module
+if __name__ != "__main__":
+    # Export the app for Vercel
+    app = app
+else:
     app.run(debug=True)
